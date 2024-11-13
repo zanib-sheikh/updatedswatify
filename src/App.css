@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: "Proxima Nova", system-ui, sans-serif;
+  }
+}
+/* Inside App.css or a global CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+ 
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+} 
+/* Add this to your index.css or a custom CSS file */
+@keyframes aurora-gradient {
+  0% {
+    background: linear-gradient(45deg, #800080, #000000, #0000ff); /* Purple, Black, Blue */
+  }
+  50% {
+    background: linear-gradient(45deg, #0000ff, #800080, #000000); /* Blue, Purple, Black */
+  }
+  100% {
+    background: linear-gradient(45deg, #800080, #000000, #0000ff); /* Back to initial */
+  }
+}
+
+/* Apply the animation to a class */
+.aurora-bg {
+  animation: aurora-gradient 6s ease infinite; /* 6 seconds loop */
+}
